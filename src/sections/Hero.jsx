@@ -1,3 +1,4 @@
+import Button from '../components/Button.jsx';
 import {words} from '../constants/index.js';
 
 function Hero() {
@@ -30,8 +31,20 @@ function Hero() {
                                 </span>
                              </span>
                         </h1>
+
+                        
                         <h1>Into Real Projects</h1>
                         <h1>that Deliver Results</h1>
+
+                        <p className='text-white-50 md:text-xl relatie z-10 pointer-events-none'>
+                            Hi,I'm Kenny, a developer based in Mozambique with passion for code.
+                        </p>
+
+                        <Button 
+                            className='md:w-80 md:h-16 w-60 h-12'
+                            id='button'
+                            text='See my Work'
+                        />
                     </div>
                 </div>
 
