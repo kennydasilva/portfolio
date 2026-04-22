@@ -1,6 +1,15 @@
 import Button from '../components/Button.jsx';
+import HeroExperience from '../components/HeroExperience.jsx';
 import {words} from '../constants/index.js';
 
+/**
+ * Hero section component that displays the main introduction, animated words, and a call-to-action button.
+ *
+ * @component
+ * @author Kenny DaSilva
+ * @description This component renders a hero section with a background image, an animated text that highlights different roles, and a button that links to the user's work. It is designed to introduce the user and their skills in a visually appealing way.
+ * @returns {JSX.Element} The rendered Hero section.
+ */
 function Hero() {
   return (
     <section id='hero' className='relative overflow-hidden'>
@@ -51,6 +60,12 @@ function Hero() {
                 
             </header>
             {/* RIGHT: 3D MODEL */}
+            <figure>
+                <div className='hero-3d-layout'>
+                    <HeroExperience/>
+                </div>
+
+            </figure>
         </div>
 
     </section>
